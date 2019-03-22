@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Welcome - HTTPServer Python</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--CSS-->
+    <style>
+        body{
+            background: orange;
+        }
+        main{
+            border-radius: 100px;    
+            background: white;
+            height: 200px;
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        div{
+            border-radius: 100px;
+            padding: 20px;
+            font-size: 150%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background: black;
+            color: white;
+            text-align: center;
+            width: 60%;
+            height: 60%;
+            margin: 0 auto;
+        }
+        p{
+            margin: 20px;
+        }
+
+        #first{
+            animation-name: diminuir;
+            animation-duration: 3s;
+        }
+
+        @keyframes diminuir {
+            from {
+                width: 100%;
+            } 
+            to {
+                width: 60%;
+            }
+        }
+
+        #second{
+            animation-name: aumentar;
+            animation-duration: 1s;
+        }
+
+        @keyframes aumentar {
+            from{
+                width: 10%;
+            }
+            to{
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+    <body>
+
+        <main id="second">
+            <div id="first">
+                <p>Welcome!</p>
+                <p>HTTPServer Python</p>
+            </div>
+        </main>
+        <main id="second">
+                <div id="first">
+                    <p>TESTE!</p>
+                </div>
+            </main>
+   </body>
+</html>
